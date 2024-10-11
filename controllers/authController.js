@@ -132,10 +132,9 @@ exports.googleCallback = async (req, res) => {
     const token = generateToken(user);
 
     // Redirect to the frontend with the token and current role
-    // res.redirect(
-    //   "https://dreamy-crostata-e2074b.netlify.app/welcome"
-    //   // `https://dreamy-crostata-e2074b.netlify.app/welcome?token=${token}&role=${user.role}`
-    // );
+    res.redirect(
+      `https://dreamy-crostata-e2074b.netlify.app/welcome?token=${token}&role=${user.role}`
+    );
   } catch (error) {
     console.error("Google callback error:", error);
     res
