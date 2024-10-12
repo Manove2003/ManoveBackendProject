@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://dreamy-crostata-e2074b.netlify.app",
+    origin: "https://graceful-axolotl-d41526.netlify.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
